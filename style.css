@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   background-color: white;
+}
+
+
+header{
+    display: block;
+    background: white;
+}
+
+
+
+@media screen and (max-width: 600px){
+   #search-form{
+        display: none;
+    }
+}
+
+.link-menu {
+    color: black;
+}
+
+
+.menuList{
+    flex: none;
+    flex-wrap: nowrap;
+}
+
+
+
+
+#profileItems{
+    display: flex;
+    margin: 25px 100px;
+    align-content: center;
+   
+}
+
+
+#profileItems img{
+   position: relative;
+   margin-right: 30px;
+}
+
+
+.list-inline{
+    display: block;
+    flex: none;
+    flex-wrap: nowrap;
+}
+
+.profileItems span h3{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: relative;
+
+}
+
+span:last-child{
+    margin-left: 12px ;
+}
+#verified{
+    margin-right: 25px;
+    color: #0892d0;
+}
+
+
+
+.profileDetails{
+    
+    margin: 25px 150px;
+    align-content: center;
+}
+
+
+.profileDetails {
+    margin-left: 200px;
+}
