@@ -15,17 +15,16 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
         <div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container justify-content-center">
-                    <div class="d-flex flex-sm-row justify-content-between align-items-center col">
+                    <div class="d-flex flex-row justify-content-between align-items-center col-9">
                         <a class="navbar-brand" href="#">
-                            <img src="Images/ig-logo.png" alt="" loading="lazy">
+                            <img src="images/ig-logo.png" alt="" loading="lazy">
                         </a>
-                        <div class="col" id="search-form">
+                        <div>
                             <form class="form-inline my-2 my-lg-0">
                                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                             </form>
                         </div>
-                        <div class="col">
-                        <div class="menuList">
+                        <div class="d-flex flex-row">
                             <ul class="list-inline m-0">
                                 <li class="list-inline-item">
                                     <a href="#" class="link-menu">
@@ -71,12 +70,13 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
                                 </li>
                                 <li class="list-inline-item ml-2 align-middle">
                                     <a href="#" class="link-menu">
-                                        <img class="rounded-circle" src="Images/Profile-pic.jpg" alt="Profile image" width="34" height="34">
+                                        <div
+                                            class="rounded-circle overflow-hidden d-flex justify-content-center align-items-center border topbar-profile-photo">
+                                            <img src="images/Profile-pic.jpg" alt="..." width="30" height="30">
                                         </div>
                                     </a>
                                 </li>
                             </ul>
-                        </div>
                         </div>
                     </div>
                 </div>
@@ -84,89 +84,113 @@ integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ
         </div>
     </header>
 
-    <div class="container">
-        <div class="row">
-            <div class="d-flex flex-wrap justify-content-center col">
-            <span class="d-flex flex-row" id="profileItems">
-               <img src="images/Profile-pic.jpg" class="rounded-circle overflow-hidden d-flex justify-content-center align-items-middle border border-danger" alt="..." width="100" height="100"></li>
-                <h3>Maboneng</h3>
-                <svg id="verified" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-patch-check-fll" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984a.5.5 0 0 0-.708-.708L7 8.793 5.854 7.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
-                </svg>
-                <button type="button" class="btn btn-primary">Follow</button>
-                <button type="button" class="btn btn-primary"><svg width="0.5em" height="0.5em" viewBox="0 0 16 16" class="bi bi-caret-down" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M3.204 5L8 10.481 12.796 5H3.204zm-.753.659l4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
-                </svg></button></li>
-                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-                </svg>
-            </span>
+   
+   <div class="container">
+       <div class="row align-items-center" id="columns">
+            <div class="ml-3 col">
+                <img  class= "rounded-circle mt-5" id= "profile" src="images/Profile-pic.jpg" alt="..." width="140" height="140">
             </div>
+            <div class="d-flex  ml-1 align-items-center col" id="name">
+            <p></p>
+                <h3 class="font-weight-normal">M A B O N E N G</h3>
+                <svg class="verified justify-content-top" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-patch-check-fll" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984a.5.5 0 0 0-.708-.708L7 8.793 5.854 7.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+                </svg>
+                <button type="button" class="btn btn-primary" id="profileIcons">Follow</button>
+                <button type="button" class="btn btn-primary" id="profileIcons"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-caret-down-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                  </svg>
+                </button>
+                <svg id="profileIcons" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-three-dots"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                </svg>
+            </p></br>
         </div>
-        <div class="justify-content-center">
-            <span class= "profileDetails">
+        </div>
+        <div class="justify-content-center pb-2">
+            <span class= "profileDetails pt-1">
             <span><b>123</b> &nbsp posts &nbsp</span>
             <span><b>5.6m</b> &nbsp followers &nbsp </span>
             <span><b>500k</b> &nbsp following &nbsp </span>
             </span>
-            <h4>KG Maboneng</h4><br>
-            <h5>The Dream chaser | catcher</h5><br>
-            <h6>Followed by <b>AmandaSets, Ayema_problem</b>+ 35 more</h6>
+            <h4 class="profileDetails font-weight-normal pt-2">KG Maboneng</h4><br>
+            <h5 class="profileDetails pt-0">The Dream chaser | catcher</h5><br>
+            <h6 class="profileDetails text-secondary">Followed by <b class="text-dark">AmandaSets, Ayema_problem</b>+ 35 more</h6>
         </div> 
+   </div>
+   <hr class="justify-content-middle ml-250 mb-1" id="divider" width="1032">
+
+   <div class="container">
+       <div class="categories">
+        <span class="categoryIcons mt-1 ml-5 justify-content-center " id="categoriz">
+            <div class="row">
+             <span><p><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-grid-3x3 text-secondary"  fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                 <path fill-rule="evenodd" d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4V6h4v4H6zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0h4v4H6v-4zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0H6V1h4v4z"/>
+               </svg> &nbsp POSTS  &nbsp &nbsp &nbsp &nbsp &nbsp
+             </p></span>
+             <span><p>
+                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-camera-reels-fill text-secondary" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" d="M0 8a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8z"/>
+                     <circle cx="3" cy="3" r="3"/>
+                     <circle cx="9" cy="3" r="3"/>
+                 </svg> &nbsp IGTV &nbsp &nbsp &nbsp &nbsp &nbsp
+             </p></span>
+             <span><p>
+                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bookmark-fill text-secondary" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.74.439L8 13.069l-5.26 2.87A.5.5 0 0 1 2 15.5V2z"/>
+                   </svg>&nbsp SAVED  &nbsp &nbsp &nbsp &nbsp &nbsp
+             </p></span>
+             <span><p>
+                 <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-file-person text-secondary" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" d="M12 1H4a1 1 0 0 0-1 1v10.755S4 11 8 11s5 1.755 5 1.755V2a1 1 0 0 0-1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4z"/>
+                     <path fill-rule="evenodd" d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                 </svg>&nbsp TAGGED  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</p>
+                </span>
+            </div>    
+             
+        </span>
     </div>
 
-    <hr>
-    <span class="categories justify-content-center">
-        <span><h6>POSTS &nbsp <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-grid-3x3" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4V6h4v4H6zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0h4v4H6v-4zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0H6V1h4v4z"/>
-        </svg></h6></span>
-        <span><h6>IGTV &nbsp <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-camera-reels" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M0 8a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8zm11.5 5.175l3.5 1.556V7.269l-3.5 1.556v4.35zM2 7a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2z"/>
-        <path fill-rule="evenodd" d="M3 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-        <path fill-rule="evenodd" d="M9 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-        </svg></h6></span>
-        <span><h6>SAVED &nbsp <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bookmark" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5V2zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1H4z"/>
-        </svg></h6></span>
-        <span><h6>TAGGED &nbsp <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-person-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-        <path fill-rule="evenodd" d="M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-        </svg></h6></span>
-    </span>
-
-    <div class="container-fluid">
+    <div class="container-fluid mt-5 pl-3" id="posts">
         <div class="row">
             <div class="col-4 justify-content-center">
-                <img class="post1" src="images/post-1.jpg" alt="post" width="300" height="300">
+                <img class="mb-3" src="images/post-1.jpg" alt="post" width="300" height="300">
             </div>
             <div class="col-4 justify-content-center">
-                <img class="post1" src="images/post-1.jpg" alt="post" width="300" height="300">
+                <img class="mb-3" src="images/post2.jpg" alt="post" width="300" height="300">
             </div>
             <div class="col-4 justify-content-center">
-                <img class="post1" src="images/post-1.jpg" alt="post" width="300" height="300">
+                <img class="mb-3" src="images/post3.jpg" alt="post" width="300" height="300">
             </div>
             <div class="col-4 justify-content-center">
-                <img class="post1" src="images/post-1.jpg" alt="post" width="300" height="300">
+                <img class="mb-3" src="images/post4.jpg" alt="post" width="300" height="300">
             </div>
             <div class="col-4">
-                <img class="post1" src="images/post-1.jpg" alt="post" width="300" height="300">
+                <img class="mb-3" src="images/post5.jpg" alt="post" width="300" height="300">
             </div>
             <div class="col-4">
-                <img class="post1" src="images/post-1.jpg" alt="post" width="300" height="300">
+                <img class="mb-3" src="images/post6.jpg" alt="post" width="300" height="300">
             </div>
-            <div class="col">
-                <img class="post1" src="images/post-1.jpg" alt="post" width="300" height="300">
+            <div class="col-4 justify-content-center">
+                <img class="mb-3" src="images/post-1.jpg" alt="post" width="300" height="300">
             </div>
-            <div class="col">
-                <img class="post1" src="images/post-1.jpg" alt="post" width="300" height="300">
+            <div class="col-4 justify-content-center">
+                <img class="mb-3" src="images/post2.jpg" alt="post" width="300" height="300">
             </div>
-            <div class="col">
-                <img class="post1" src="images/post-1.jpg" alt="post" width="300" height="300">
+            <div class="col-4 justify-content-center">
+                <img class="mb-3" src="images/post3.jpg" alt="post" width="300" height="300">
             </div>
-        </div>
-    </div>
-
-   
+            <div class="col-4 justify-content-center">
+                <img class="mb-3" src="images/post4.jpg" alt="post" width="300" height="300">
+            </div>
+            <div class="col-4">
+                <img class="mb-3" src="images/post5.jpg" alt="post" width="300" height="300">
+            </div>
+            <div class="col-4">
+                <img class="mb-3" src="images/post6.jpg" alt="post" width="300" height="300">
+            </div>
+        </div>   
+    </div>   
     
 
    <!-- JS, Popper.js, and jQuery -->
