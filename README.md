@@ -1,4 +1,4 @@
-# Instagram-clone
+netl# Instagram-clone
 A clone of Instagram profile page with Bootstrap
 
 ## Table of contents
@@ -30,6 +30,9 @@ To run this project, install it locally
 
 ## Status
 Project is: finished, it was for a Zaio assignment
+
+
+## Link: https://thirsty-engelbart-8f71a8.netlify.app/
 
 
 ## Inspiration
